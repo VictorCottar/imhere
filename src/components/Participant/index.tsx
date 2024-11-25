@@ -1,16 +1,20 @@
 import { View, Text, TouchableOpacity } from 'react-native'
-
-import { styles } from './styles'
 import { MaterialIcons } from '@expo/vector-icons'
 
+import { styles } from './styles'
 
-export function Participant() {
+type ParticipantProps = {
+  name: string;
+  onRemove: () => void;
+}
+
+export function Participant({ name, onRemove }: ParticipantProps) {
   return (
     <View style={styles.container}>
       <Text style={styles.name}>
-        Victor Cottar
+        {name}
       </Text>
-      <TouchableOpacity style={styles.button} >
+      <TouchableOpacity style={styles.button} onPress={onRemove} >
         <MaterialIcons name="remove" size={24} color="white" />
       </TouchableOpacity>
     </View>

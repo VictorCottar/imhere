@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     width: 50,
     height: 50,
     borderRadius: 8,
-    backgroundColor: '#FFCE00',
+    backgroundColor: '#31CF67',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -40,5 +40,12 @@ export const styles = StyleSheet.create({
     marginTop: 36,
     marginBottom: 42,
     gap: 16
+  },
+  listEmptyComponent: {
+    color: '#6B6B6B',
+    fontSize: 14,
+    textAlign: 'center',
+    flexWrap: 'wrap',
+    marginTop: 24
   }
 })
